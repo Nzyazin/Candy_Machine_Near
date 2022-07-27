@@ -86,12 +86,15 @@ As you can see in `package.json`, this does two things:
 2. builds & deploys frontend code to GitHub using [gh-pages]. This will only work if the project already has a repository set up on GitHub. Feel free to modify the `deploy` script in `package.json` to deploy elsewhere.
 
 Step4: Change your id account for blockchain NEAR.
+--------------------------------------------------
 1. Inputting your ID account for smart contract (contract/src/enumeration.rs pub fn selling_token).
 
 Step5: Adding your NFT.
+-----------------------
 You can adding one NFT with method contract/src/mint.rs pub fn nft_before_mint.
 
-Step6: 
+Step6: Minting.
+---------------
 Minting your NFT with calling method contract/src/nft_core.rs pub fn nft_mint through near cli or frontend button. Giving NFT from owner account for receiver account while NFTs are existing in the contract.
 
 
